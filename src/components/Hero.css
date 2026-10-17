@@ -1,0 +1,133 @@
+.hr {
+  background: var(--gelap);
+  color: #ffffff;
+}
+
+.hr-dalam {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 6vw 40px;
+}
+
+.hr-garis {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: var(--warna-aksen);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hr-garis::before {
+  content: "";
+  width: 36px;
+  height: 2px;
+  background: var(--warna-aksen);
+}
+
+.hr h1 {
+  margin-bottom: 18px;
+  font-size: clamp(34px, 4.6vw, 54px);
+}
+
+.hr-desc {
+  max-width: 520px;
+  margin-bottom: 28px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 18px;
+}
+
+.hr-aksi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hr-bingkai {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin-left: auto;
+  padding: 0 20px 20px 0;
+}
+
+.hr-bingkai::before {
+  content: "";
+  position: absolute;
+  inset: 20px 0 0 20px;
+  border: 2px solid var(--warna-aksen);
+  border-radius: 8px;
+}
+
+.hr-foto {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 8px;
+  background-color: #0f5a43;
+  background-size: cover;
+  background-position: center;
+}
+
+.hr-bawah {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hr-statistik {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 6vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hr-statistik li {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px 20px 24px;
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hr-statistik li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.hr-statistik b {
+  font-family: var(--font-judul), serif;
+  font-size: 32px;
+  line-height: 1.1;
+  color: var(--warna-aksen);
+}
+
+.hr-statistik span {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 860px) {
+  .hr-dalam {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 6vw 28px;
+  }
+
+  .hr-bingkai {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .hr-statistik {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hr-statistik li:nth-child(odd) {
+    padding-left: 0;
+    border-left: none;
+  }
+}

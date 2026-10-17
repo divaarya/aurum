@@ -1,0 +1,88 @@
+.ck {
+  background: var(--pasir);
+  border-block: 1px solid var(--garis);
+}
+
+.ck-dalam {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 6vw;
+}
+
+.ck-kiri {
+  position: sticky;
+  top: 90px;
+}
+
+.ck-kiri h2 {
+  margin-bottom: 12px;
+}
+
+.ck-kiri p {
+  max-width: 440px;
+  margin-bottom: 22px;
+  color: var(--redup);
+  font-size: 17px;
+}
+
+.ck-garis {
+  position: relative;
+  display: grid;
+  gap: 26px;
+}
+
+.ck-garis::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 19px;
+  width: 2px;
+  background: var(--warna-aksen);
+}
+
+.ck-garis li {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.ck-titik {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--warna-utama);
+  color: #ffffff;
+  font-family: var(--font-judul), serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ck-garis h3 {
+  margin-bottom: 4px;
+  font-size: 21px;
+}
+
+.ck-garis p {
+  color: var(--redup);
+}
+
+@media (max-width: 860px) {
+  .ck-dalam {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 36px 6vw;
+  }
+
+  .ck-kiri {
+    position: static;
+  }
+}

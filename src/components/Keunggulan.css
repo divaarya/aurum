@@ -1,0 +1,82 @@
+.ku {
+  position: relative;
+  background-color: var(--gelap);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.ku::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 45, 34, 0.96),
+    rgba(8, 45, 34, 0.8)
+  );
+}
+
+.ku-dalam {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 6vw;
+}
+
+.ku-kepala {
+  max-width: 580px;
+  margin-bottom: 28px;
+}
+
+.ku-kepala h2 {
+  margin-bottom: 10px;
+}
+
+.ku-kepala p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 17px;
+}
+
+.ku-daftar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.ku-daftar li {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 18px;
+  border-top: 2px solid var(--warna-aksen);
+}
+
+.ku-daftar svg {
+  color: var(--warna-aksen);
+}
+
+.ku-daftar h3 {
+  font-size: 19px;
+}
+
+.ku-daftar p {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+}
+
+@media (max-width: 960px) {
+  .ku-daftar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .ku-dalam {
+    padding: 36px 6vw;
+  }
+
+  .ku-daftar {
+    grid-template-columns: 1fr;
+  }
+}

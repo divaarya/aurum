@@ -1,0 +1,71 @@
+.ts-dalam {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 44px 6vw;
+  text-align: center;
+}
+
+.ts-dalam h2 {
+  margin-bottom: 18px;
+}
+
+.ts-kutip {
+  color: var(--warna-aksen);
+}
+
+.ts blockquote {
+  min-height: 7.5em;
+  margin-top: 8px;
+  font-family: var(--font-judul), serif;
+  font-size: clamp(21px, 2.6vw, 28px);
+  line-height: 1.4;
+}
+
+.ts-nama {
+  margin-top: 14px;
+}
+
+.ts-nama b {
+  display: block;
+}
+
+.ts-nama span {
+  color: var(--redup);
+  font-size: 15px;
+}
+
+.ts-kontrol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 22px;
+  font-weight: 600;
+}
+
+.ts-kontrol button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid var(--warna-utama);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--warna-utama);
+  cursor: pointer;
+}
+
+.ts-kontrol button:hover {
+  background: var(--warna-utama);
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .ts-dalam {
+    padding: 36px 6vw;
+  }
+
+  .ts blockquote {
+    min-height: 11em;
+  }
+}

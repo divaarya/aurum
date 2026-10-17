@@ -1,0 +1,19 @@
+.wa {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--warna-aksen);
+  color: var(--gelap);
+  box-shadow: 0 10px 24px rgba(8, 45, 34, 0.35);
+  transition: transform 0.15s;
+}
+
+.wa:hover {
+  transform: translateY(-3px);
+}

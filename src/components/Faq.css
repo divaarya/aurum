@@ -1,0 +1,72 @@
+.fq {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 44px 6vw;
+}
+
+.fq h2 {
+  margin-bottom: 22px;
+}
+
+.fq-daftar {
+  border-bottom: 1px solid var(--garis);
+}
+
+.fq-baris {
+  border-top: 1px solid var(--garis);
+}
+
+.fq-tanya {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  border: none;
+  background: none;
+  color: var(--tinta);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fq-no {
+  width: 32px;
+  flex-shrink: 0;
+  font-family: var(--font-judul), serif;
+  font-size: 20px;
+  color: var(--warna-utama);
+}
+
+.fq-teks {
+  flex: 1;
+}
+
+.fq-tanya svg {
+  flex-shrink: 0;
+  color: var(--warna-utama);
+}
+
+.fq-jawab {
+  padding: 0 0 20px 50px;
+  max-width: 720px;
+  color: var(--redup);
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  .fq {
+    padding: 36px 6vw;
+  }
+
+  .fq-tanya {
+    gap: 12px;
+    font-size: 17px;
+  }
+
+  .fq-jawab {
+    padding-left: 0;
+  }
+}

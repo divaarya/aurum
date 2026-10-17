@@ -1,0 +1,61 @@
+.kt {
+  background: var(--warna-utama);
+  color: #ffffff;
+}
+
+.kt-dalam {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 6vw;
+}
+
+.kt-kiri h2 {
+  margin-bottom: 12px;
+}
+
+.kt-kiri p {
+  max-width: 480px;
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 17px;
+}
+
+.kt-info {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.kt-info li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  overflow-wrap: anywhere;
+}
+
+.kt-info svg {
+  flex-shrink: 0;
+  color: var(--warna-aksen);
+}
+
+.kt-info small {
+  display: block;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+}
+
+.kt-info span {
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .kt-dalam {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 36px 6vw;
+  }
+}
